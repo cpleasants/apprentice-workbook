@@ -12,5 +12,6 @@
  * @param {Array} words 
  */
 module.exports = (initial, words) => {
-    // your code here
+   return words.filter(w => w.slice(0, initial.length).toLowerCase() === initial.toLowerCase())
+    
 }

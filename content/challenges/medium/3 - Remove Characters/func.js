@@ -8,5 +8,13 @@
  * @returns {string}
  */
 module.exports = (str) => {
-    // your code here
+    allowed = "abcdefghijklmnopqrstuvwxyz0123456789-_ ."
+    let out_str = '';
+    for (i = 0; i < str.length; i++) {
+        if (allowed.includes(str[i].toLowerCase())) {
+            out_str += str[i]
+        }
+    }
+    return out_str
+    // Could also use regular expressions
 }

@@ -10,5 +10,11 @@
  * @returns {string}
  */
 module.exports = (str) => {
-    // Your code here
+    words = str.split(" ");
+    out_words = []
+    for (i = 0; i < words.length; i++) {
+        let word = words[i]
+        out_words.push(word[0].toUpperCase() + word.slice(1))
+    }
+    return out_words.join(" ")
 }

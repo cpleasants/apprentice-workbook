@@ -12,5 +12,13 @@
  * @returns {boolean}
  */
 module.exports = (str) => {
-    // your code here
+    let usedLetters = []
+    for (i = 0; i < str.length; i++) {
+        if (usedLetters.includes(str[i].toLowerCase())) {
+            return false
+        } else {
+            usedLetters.push(str[i].toLowerCase())
+        }
+    }
+    return true
 }

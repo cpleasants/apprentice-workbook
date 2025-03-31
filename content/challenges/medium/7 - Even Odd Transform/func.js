@@ -10,5 +10,13 @@
  * @param {number} n 
  */
 module.exports = (arr, n) => {
-    // your code here
+    let out_arr = []
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            out_arr.push(arr[i] - 2*n)
+        } else {
+            out_arr.push(arr[i] + 2*n)
+        }
+    }
+    return out_arr
 }

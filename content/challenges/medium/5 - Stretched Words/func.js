@@ -9,5 +9,13 @@
  * @returns {string}
  */
 module.exports = (word) => {
-    // your code here
+    let out_word = word[0]
+    let prev_letter = word[0]
+    for (i = 1; i < word.length; i++) {
+        if (word[i] !== prev_letter) {
+            out_word += word[i]
+            prev_letter = word[i]
+        }
+    }
+    return out_word
 }
