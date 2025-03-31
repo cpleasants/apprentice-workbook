@@ -10,5 +10,18 @@
  * @returns {boolean} true if the string is a palindrome, false otherwise
  */
 module.exports = (str) => {
-  // your code here
+  function symmetryCheck(lettersArray) {
+    if (lettersArray.length <= 1) {
+      return true
+    }
+    let first = lettersArray.shift()
+    let last = lettersArray.pop()
+    if (first === last) {
+      return symmetryCheck(lettersArray)
+    } else {
+      return false
+    }
+  }
+
+  return symmetryCheck(str.split(''))
 }

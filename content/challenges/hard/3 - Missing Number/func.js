@@ -10,5 +10,9 @@
  * @returns {Number} the missing number
  */
 module.exports = (arr) => {
-    // Your code here
+    let expectedNumbers = [];
+    for (i = 1; i <= arr.length + 1; i++) {
+        expectedNumbers.push(i)
+    }
+    return expectedNumbers.filter(n => !arr.includes(n))[0]
 }
