@@ -9,5 +9,7 @@
  * @returns {boolean}
  */
 module.exports = (word) => {
-    
+    // return word.toLowerCase().endsWith('s')
+    return Array.from(word)[word.length - 1].toLowerCase() === 's'; // treating word as a char[] (array of characters)
+    return word[word.length -1].toLowerCase() === 's'; // using substring method
 };
