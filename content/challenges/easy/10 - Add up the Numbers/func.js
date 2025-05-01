@@ -8,10 +8,6 @@
  * @returns {number} sum of all numbers from 1 to num
  */
 module.exports = (num) => {
-    let total = 0
-    for (i = 1; i <= num; i++) {
-        total += i
-    }
-    return total
+    return Array(num).fill(0).reduce((tot, _, i) => tot + i + 1, 0);
 };
 
