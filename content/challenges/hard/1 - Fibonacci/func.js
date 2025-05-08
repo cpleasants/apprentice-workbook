@@ -18,7 +18,7 @@ module.exports = (n) => {
     let two_back = 0;
     let one_back = 1;
     let fib_num = 1;
-    for (i = 2; i < n; i++) {
+    for (let i = 2; i < n; i++) {
         two_back = one_back;
         one_back = fib_num;
         fib_num = two_back + one_back;

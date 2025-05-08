@@ -11,7 +11,7 @@
  */
 module.exports = (arr) => {
     let expectedNumbers = [];
-    for (i = 1; i <= arr.length + 1; i++) {
+    for (let i = 1; i <= arr.length + 1; i++) {
         expectedNumbers.push(i);
     }
     return expectedNumbers.filter(n => !arr.includes(n))[0];
