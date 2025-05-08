@@ -14,9 +14,7 @@ module.exports = (str) => {
     if (lettersArray.length <= 1) {
       return true;
     }
-    let first = lettersArray.shift();
-    let last = lettersArray.pop();
-    if (first === last) {
+    if (lettersArray.shift() === lettersArray.pop()) {
       return symmetryCheck(lettersArray);
     } else {
       return false;
