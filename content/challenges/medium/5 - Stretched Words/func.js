@@ -10,7 +10,7 @@
  */
 module.exports = (word) => {
     let out_word = '';
-    for (i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length; i++) {
         if (word[i] !== word[i + 1]) {
             out_word += word[i];
         }

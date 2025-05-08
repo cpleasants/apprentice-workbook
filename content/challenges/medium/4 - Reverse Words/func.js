@@ -13,7 +13,7 @@
 module.exports = (str) => {
     let words = str.split(" ");
     let rev_words = [];
-    for (i = 0; i < words.length; i++) {
+    for (let i = 0; i < words.length; i++) {
         if (words[i].length >= 5) {
             let rev_word = words[i].split('').reverse().join('');
             rev_words.push(rev_word);
