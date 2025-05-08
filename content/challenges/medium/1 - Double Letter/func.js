@@ -8,13 +8,12 @@
  * @returns {boolean}
  */
 module.exports = (word) => {
-    let prev = word[0].toLowerCase()
-    for (i = 1; i < word.length; i++) {
-        if (word[i].toLowerCase() === prev) {
-            return true
+    for (let i = 1; i < word.length; i++) {
+        if (word[i].toLowerCase() === word[i-1].toLowerCase()) {
+            return true;
         } else {
-            prev = word[i].toLowerCase()
+            prev = word[i].toLowerCase();
         }
     }
-    return false
+    return false;
 }
