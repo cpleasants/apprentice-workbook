@@ -10,9 +10,7 @@
  * @returns {Number} the missing number
  */
 module.exports = (arr) => {
-    let expectedNumbers = [];
-    for (let i = 1; i <= arr.length + 1; i++) {
-        expectedNumbers.push(i);
-    }
-    return expectedNumbers.filter(n => !arr.includes(n))[0];
+    let expectedSum = ((arr.length + 1) * (arr.length + 2)) / 2;
+    let actualSum = arr.reduce((total, item) => (total + item));
+    return expectedSum - actualSum;
 }
