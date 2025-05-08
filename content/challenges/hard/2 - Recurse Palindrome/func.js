@@ -12,16 +12,16 @@
 module.exports = (str) => {
   function symmetryCheck(lettersArray) {
     if (lettersArray.length <= 1) {
-      return true
+      return true;
     }
-    let first = lettersArray.shift()
-    let last = lettersArray.pop()
+    let first = lettersArray.shift();
+    let last = lettersArray.pop();
     if (first === last) {
-      return symmetryCheck(lettersArray)
+      return symmetryCheck(lettersArray);
     } else {
-      return false
+      return false;
     }
   }
 
-  return symmetryCheck(str.split(''))
+  return symmetryCheck(str.split(''));
 }
