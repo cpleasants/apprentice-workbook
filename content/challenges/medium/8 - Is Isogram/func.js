@@ -12,5 +12,6 @@
  * @returns {boolean}
  */
 module.exports = (str) => {
-    // your code here
+  let st = new Set(str.toLowerCase().split(''));
+  return str.length === st.size;
 }

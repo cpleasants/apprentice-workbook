@@ -13,7 +13,7 @@ test('Expects Missing Number to be 10', () => {
 });
 
 test('Expects Missing Number to be 12', () => {
-    expect(func([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])).toEqual(2);
+    expect(func([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])).toEqual(12);
 });
 
 test('Expects Missing Number to be 1', () => {

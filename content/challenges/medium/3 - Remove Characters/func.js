@@ -8,5 +8,6 @@
  * @returns {string}
  */
 module.exports = (str) => {
-    // your code here
+  const re = /[a-zA-Z0-9-_\. ]+/g;
+  return (str.match(re).join(''));
 }

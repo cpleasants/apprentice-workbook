@@ -12,5 +12,22 @@
  * @param {Array} words 
  */
 module.exports = (initial, words) => {
-    // your code here
+  let filteredWords = [];
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length < initial.length) {
+      continue;
+    }
+
+    let matchCount = 0;
+    for (let j = 0; j < initial.length; j++) {
+      if (words[i][j].toLowerCase() === initial[j].toLowerCase()) {
+        matchCount += 1;
+      }
+    }
+    if (matchCount === initial.length) {
+      filteredWords.push(words[i]);
+    }
+    
+  }
+   return filteredWords;
 }

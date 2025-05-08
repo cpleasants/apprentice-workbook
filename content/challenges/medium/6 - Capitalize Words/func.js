@@ -10,5 +10,5 @@
  * @returns {string}
  */
 module.exports = (str) => {
-    // Your code here
+    return str.split(" ").map(word => (word[0].toUpperCase() + word.slice(1))).join(" ")
 }

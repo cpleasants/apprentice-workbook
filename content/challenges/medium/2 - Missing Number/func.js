@@ -10,5 +10,7 @@
  * @returns {Number} the missing number
  */
 module.exports = (arr) => {
-    // Your code here
+  let arrSum = arr.reduce((total, item) => (total + item), 0);
+  let expectedSum = ((arr.length + 1) * (arr.length + 2)) / 2;
+  return expectedSum - arrSum;
 }

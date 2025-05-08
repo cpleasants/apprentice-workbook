@@ -11,5 +11,15 @@
  * @returns {string} The string with the proper words reversed
  */
 module.exports = (str) => {
-    // your code here
+    let words = str.split(" ");
+    let rev_words = [];
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length >= 5) {
+            let rev_word = words[i].split('').reverse().join('');
+            rev_words.push(rev_word);
+        } else {
+            rev_words.push(words[i]);
+        }
+    }
+    return rev_words.join(" ")
 }
