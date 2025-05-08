@@ -9,9 +9,10 @@
  * @returns {boolean}
  */
 module.exports = (str) => {
-    let backwards = ''
-    for (i = str.length - 1; i >= 0; i--) {
-        backwards += str[i]
+  for (let i = 0; i <= str.length / 2; i++) {
+    if (str[i] != str[str.length - i - 1]) {
+      return false;
     }
-    return str === backwards
+  }
+    return true;
 }
